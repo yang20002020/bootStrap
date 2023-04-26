@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<!-- 
+   网页顶部：
+    网页顶部三部分在PC屏幕上显示为1行，在移动设备屏幕上显示为每一部分单独占一行
+-->
+
+<body>
+    <div class="container">
+        <!--网站的头部-->
+        <div class="row">
+            <div class="col-md-4">
+                <img src="./img/logo2.png" />
+            </div>
+
+            <div class="col-md-4">
+                <img src="./img/header.png" />
+            </div>
+
+            <div class="col-md-4">
+                <ul class="list-inline" style="margin-top:10px">
+                    <li><a href="" class="btn btn-primary">登录</a></li>
+                    <li><a href="" class="btn btn-primary">注册</a></li>
+                    <li><a href="" class="btn btn-danger">购物车</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--导航条-->
+        <nav class="navbar navbar-inverse">
+            <!--class="navbar navbar-inverse" 反色导航条 -->
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <!-- 导航图片以及汉堡按钮-->
+                <div class="navbar-header">
+                    <!--汉堡按钮 当浏览器变小的时候， 会显示汉堡按钮-->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <!--阅读器专用样式，盲人专用-->
+                        <span class="sr-only">Toggle navigation</span>
+
+                        <span class="icon-bar"></span> <!-- span 标签  汉堡按钮中的横线-->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--可以修改编辑的地方-->
+                    <a class="navbar-brand" href="#">首页</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <!--导航的主体部分-->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">手机数码 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">电脑办公</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">母婴用品</a></li>
+                                <li><a href="#">汽车配件</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li> <!-- 分割线-->
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--
+                            表单： 修改left 或者right 可以修改表单所在的位置
+                        -->
+
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+        <!--注册页面主体-->
+        <!--网站底部-->
+    </div>
+</body>
+
+</html>
